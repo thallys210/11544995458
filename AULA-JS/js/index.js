@@ -8,14 +8,12 @@ No javascript temos 3 palavras-chaves para declarar variaveis:
 -> cpmst
 */
 
-//DECLARAÇÃO DE VARIAVEIS
-var a, b, c;
+let x = 10; // aqui e 10
 
-//ATRIBUIÇÃO DOS VALORES
-var a = 2;
-b = 3;
- c = a + b;
+{
+    let x = 2; // aqui e 2 
+}
 
- var a=5;
- 
-alert(c);
+// aqui também vai ser 2
+document.getElementById("texto"). innerHTML = x;
+
