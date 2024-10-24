@@ -20,3 +20,8 @@ function eventoClick() {
 function eventoDlClick() {
   alert('Evento de clique duplo');
 }
+
+function viravermelho(){
+    let div = document.getElementById("teste");
+    div.style.backgroundColor = "red";
+}
