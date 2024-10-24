@@ -13,5 +13,10 @@ console.log(carro.completo());
 
 
 function eventoClick() {
-  alert('acionou um evento de lick');
+  //alert('acionou um evento de lick');
+  document.body.style.backgroundColor = "yellow";
+}
+
+function eventoDlClick() {
+  alert('Evento de clique duplo');
 }
