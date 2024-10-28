@@ -13,12 +13,25 @@
     </style>
 </head>
 
-<body>
+<body onmouseup=" //alert('clicou na tela')">
     <h1>Aprendendo javascript</h1>
     <h2>Eventos javascript</h2>
     <p id="texto"></p>
 
     <button onclick="eventoClick()">Clique aqui</button>
+    
+    <button ondblclick="eventoDblClink()">Clique aqui</button><br><br>
+
+    <div id="teste" onmousemove="adicionaTexto()" onmouseleave="viraAzul()" onmouseenter="viravermelho()"
+        style="margin:auto auto;width:80%; height: 200px; background-color: blue">
+    </div>
+
+    <br>
+   
+    <input onchange="mudou()" id="campoTexto" style="padding:80px; font-size:40px;" type="text" 
+        placeholder="Digite alguma coisa" value="ja vem com texto">
+   
+
     
     <script src="./js/index.js"></script>
 </body>

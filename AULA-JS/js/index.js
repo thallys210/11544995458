@@ -17,7 +17,7 @@ function eventoClick() {
   document.body.style.backgroundColor = "yellow";
 }
 
-function eventoDlClick() {
+function eventoDblClink() {
   alert('Evento de clique duplo');
 }
 
@@ -29,4 +29,17 @@ function viravermelho() {
 function viraAzul() {
   let div = document.getElementById("teste");
   div.style.backgroundColor = "blue";
+}
+
+function adicionaTexto(){
+  let p = document.getElementById("texto");
+  p.append('mouse moveu<br>');
+}
+
+function limpaTexto() {
+  document.getElementById("campoTexto").value = "";
+}
+
+function mudou() {
+  console.log ('Mudou');
 }
