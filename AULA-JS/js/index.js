@@ -43,3 +43,7 @@ function limpaTexto() {
 function mudou() {
   console.log ('Mudou');
 }
+
+function teclapressionada() {
+  console.log('Tecla pressionada');
+}

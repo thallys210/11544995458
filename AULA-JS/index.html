@@ -13,7 +13,7 @@
     </style>
 </head>
 
-<body onmouseup=" //alert('clicou na tela')">
+<body onresize="console.log('Houve um redimencionamento')"> 
     <h1>Aprendendo javascript</h1>
     <h2>Eventos javascript</h2>
     <p id="texto"></p>
@@ -22,14 +22,22 @@
     
     <button ondblclick="eventoDblClink()">Clique aqui</button><br><br>
 
+    <select onchange="mudou()" id="itens">
+        <option value="1">valor 1</option> 
+        <option value="2">valor 2</option> 
+        <option value="3">valor 3</option> 
+        <option value="4">valor 4</option>         
+    </select>
+    <br><br>
+
     <div id="teste" onmousemove="adicionaTexto()" onmouseleave="viraAzul()" onmouseenter="viravermelho()"
         style="margin:auto auto;width:80%; height: 200px; background-color: blue">
     </div>
 
     <br>
    
-    <input onchange="mudou()" id="campoTexto" style="padding:80px; font-size:40px;" type="text" 
-        placeholder="Digite alguma coisa" value="ja vem com texto">
+    <input onkeyup="teclapressionada()"  onblur="eventoClick()" id="campoTexto" style="padding:80px; font-size:40px;" type="text" 
+        placeholder="Digite alguma coisa">
    
 
     
