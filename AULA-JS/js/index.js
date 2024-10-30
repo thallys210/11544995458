@@ -47,3 +47,12 @@ function mudou() {
 function teclapressionada() {
   console.log('Tecla pressionada');
 }
+
+var item1 = "arroz";
+var item2 = "feijão";
+var item3 = "macarrão";
+var item4 = "leite";
+
+const lista = ["arroz", "feijão", "macarrão", "leite"]; 
+
+alert(lista[0]);
