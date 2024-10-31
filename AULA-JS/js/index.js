@@ -53,6 +53,8 @@ var item2 = "feijão";
 var item3 = "macarrão";
 var item4 = "leite";
 
-const lista = ["arroz", "feijão", "macarrão", "leite"]; 
 
-alert(lista[0]);
+const pessoa = ["Thallys", "Andrey", 30, "professor"]; //array
+const x = "Dimitri";
+
+alert(Array.isArray(x)); //true
