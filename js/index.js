@@ -62,8 +62,12 @@ document.getElementById("teste").innerHTML = pessoa;
 
 var interruptor = "on";
 
-if (interruptor=="on"){
-   alert('A lampada esta ligada');
-}else {
-    alert('A lampada esta desligada');
+var hora = new Date().getHours();
+
+if (hora ,12){
+  alert('Bom dia');
+}else if (hora <18){
+  alert ('Boa tarde');
+}else{
+  alert('Boa noite')
 }
