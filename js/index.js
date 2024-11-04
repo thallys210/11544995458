@@ -71,3 +71,7 @@ if (hora ,12){
 }else{
   alert('Boa noite')
 }
+
+function verificar(){
+  
+}
