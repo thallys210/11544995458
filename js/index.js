@@ -56,5 +56,14 @@ var item4 = "leite";
 
 const pessoa = ["Thallys", "Andrey", 30, "professor"]; //array
 const x = "Dimitri";
+pessoa.push("Qualquer Coisa");
 
-alert(Array.isArray(x)); //true
+document.getElementById("teste").innerHTML = pessoa;
+
+var interruptor = "on";
+
+if (interruptor=="on"){
+   alert('A lampada esta ligada');
+}else {
+    alert('A lampada esta desligada');
+}
