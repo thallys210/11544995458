@@ -11,3 +11,26 @@ function verificar() {
         p.style.color = "green";
     }
 }
+
+function verificacor() {
+    let cor = document.getElementById("cor").value;
+
+
+switch (cor) {
+    case "azul":
+        document.body.style.backgroundColor = "blue";
+        break;
+    case "vermelho":
+         document.body.style.backgroundColor = "red";    
+        break;
+
+        case "amarelo":
+        document.body.style.backgroundColor = "yellow";
+         break;
+         default:
+
+         document.getElementById("Teste").innerHTML = "nenhuma cor disponivel para: " +cor;
+            
+}
+        
+}
