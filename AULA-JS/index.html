@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="=X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <title>Gerenciador de arquivo</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body onresize="console.log('Houve um redimencionamento')"> 
+    <h1>Aprendendo javascript</h1>
+    <p id="teste"></p><br>
+    <input id="cor" style="padding:50px; font-size:40px;" type="text" id="nome" placeholder="Digite uma cor">
+    <button onclick="verificacor()" style="padding:70px">verifica</button>
+    <h2>Eventos javascript</h2>
+    <p id="texto"></p>
+
+    <button onclick="eventoClick()">Clique aqui</button>
+    
+    <button ondblclick="eventoDblClink()">Clique aqui</button><br><br>
+
+    <select onchange="mudou()" id="itens">
+        <option value="1">valor 1</option> 
+        <option value="2">valor 2</option> 
+        <option value="3">valor 3</option> 
+        <option value="4">valor 4</option>         
+    </select>
+    <br><br>
+
+    <div id="teste" onmousemove="adicionaTexto()" onmouseleave="viraAzul()" onmouseenter="viravermelho()"
+        style="margin:auto auto;width:80%; height: 200px; background-color: blue">
+    </div>
+
+    <br>
+   
+    <input onkeyup="teclapressionada()"  onblur="eventoClick()" id="campoTexto" style="padding:80px; font-size:40px;" type="text" 
+        placeholder="Digite alguma coisa">
+   
+
+    
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
