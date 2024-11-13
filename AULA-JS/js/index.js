@@ -94,3 +94,45 @@ function verifica() {
 }
 
 
+
+var ano = new Date().getFullYear();
+
+for (let i=2021; i >1900; i--) {
+  document.getElementById("ano").innerHTML +="<option value='"+ i +"'>"+ i +"</option>";
+}
+
+
+const carros = ["Gol", "Fusca", "Brasilia", "Dell Rey", "Chevette"];
+var tamanho = carros.length;
+
+for (let i = 0; i < tamanho; i++) {
+  document.getElementById("teste").innerHTML += carros[i] + " - ";
+}
+
+
+var cronometro;
+
+function ativarContagem() {
+  //document.getElementById('tempo').innerHTML = "começou a Contar!";
+
+  // EXECUTA APENAS UMA VEZ APÓS O tempo DETERMINADO
+ // setTimeout(function () { 
+    // document.getElementById('tempo').innerHTML = "Executou O setTimeout";
+  // }, 5000);
+
+   cronometro = setInterval(function() {
+      var cronometro = document.getElementById('tempo').innerHTML;
+
+    
+    var  soma =  parseInt(cronometro) + 1;
+      console.log(soma)
+      document.getElementById('tempo').innerHTML = soma;
+  }, 1000);
+
+
+}
+
+
+function paraContagem(){
+  clearInterval(cronometro);
+}
