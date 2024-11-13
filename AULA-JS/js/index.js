@@ -92,3 +92,5 @@ function verifica() {
               document.getElementById("teste").innerHTML = "Nenhuma cor disponivel para: "+cor;
     }
 }
+
+

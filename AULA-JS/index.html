@@ -5,21 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="=X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="./main.css">
     <title>Gerenciador de arquivo</title>
     <style>
         body{
             text-align: center;
         }
+
+        .stop {
+            background-color: tomato;
+        }
     </style>
 </head>
 
-<body onresize="console.log('Houve um redimencionamento')"> 
+<body
+ onresize="console.log('Houve um redimencionamento')"> 
     <h1>Aprendendo javascript</h1>
     <p id="teste"></p><br>
-    <input id="cor" style="padding:50px; font-size:40px;" type="text" id="nome" placeholder="Digite uma cor">
+    <input id="cor" style="padding:50px; font-size:40px;" type="text" id="nome" placeholder="Digite uma cor"> 
     <button onclick="verificacor()" style="padding:70px">verifica</button>
     <h2>Eventos javascript</h2>
+    <h2 id="tempoTitulo">controle de tempo</h2>
+    <h2 id="tempo">10</h2>
+    <select id="ano" class="selecione">
+        <option selected disabled>selecione o ano</option>
+    </select>
+    <button onclick="ativarContagem()" class="start">ativar contagem</button>
+    <button onclick="paraContagem()" class="stop">PararContagem</button>
     <p id="texto"></p>
 
     <button onclick="eventoClick()">Clique aqui</button>
